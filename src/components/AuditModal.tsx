@@ -7,15 +7,6 @@ interface AuditModalProps {
   onClose: () => void;
 }
 
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
-
-interface AuditModalProps {
-  isOpen: boolean;
-  onClose: () => void;
-}
-
 const bottleneckOptions = [
   "Data Entry & Spreadsheets",
   "CRM Syncing & Updates",
@@ -310,11 +301,6 @@ export default function AuditModal({ isOpen, onClose }: AuditModalProps) {
               </>
             )}
           </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-}
         </motion.div>
       )}
     </AnimatePresence>
