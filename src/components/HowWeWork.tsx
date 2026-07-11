@@ -25,7 +25,7 @@ const steps = [
 
 export default function HowWeWork() {
   return (
-    <section className="py-28 bg-radial-0d">
+    <section className="py-28 bg-[#0d0d0d]">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,10 +46,9 @@ export default function HowWeWork() {
               key={step.number}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.015, transition: { type: "spring", stiffness: 300, damping: 25 } }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="relative bg-[#111111] border border-[#1e1e1e] rounded-2xl p-7 hover-glow-card"
+              viewport={{ once: true }}
+              className="relative bg-[#111111] border border-[#1e1e1e] rounded-2xl p-7 hover:border-[#2a2a2a] transition-colors duration-300"
             >
               <span className="block text-[5rem] font-black leading-none text-[#1a1a1a] select-none mb-4 -mt-2">
                 {step.number}

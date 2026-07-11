@@ -11,7 +11,7 @@ const coverageItems = [
 
 export default function AuditOffer() {
   return (
-    <section className="py-28 bg-radial-0d">
+    <section className="py-28 bg-[#0d0d0d]">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,22 +44,6 @@ export default function AuditOffer() {
             <p className="text-[#9a9a9a] text-base leading-relaxed">
               There's no obligation. No sales process attached to it. Just an honest assessment.
             </p>
-            
-            {/* Founder Signature Note */}
-            <div className="pt-6 border-t border-[#1e1e1e] flex flex-col gap-3 mt-8">
-              <p className="text-xs italic text-[#777] leading-relaxed">
-                "Our goal is simple: to show you exactly where operations are leaking time, without the standard software sales pitch. You get the blueprint; you choose what to build."
-              </p>
-              <div className="flex items-center gap-3 mt-2">
-                <div className="w-8 h-8 rounded-full bg-[#1e1e1e] border border-[#2a2a2a] flex items-center justify-center text-[10px] font-bold text-[#4f6ef7]">
-                  LS
-                </div>
-                <div>
-                  <span className="block text-xs font-semibold text-[#f0f0f0]">Lennart Schulze</span>
-                  <span className="block text-[10px] text-[#555]">Founder & Principal Operator</span>
-                </div>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right: coverage card */}
@@ -68,7 +52,7 @@ export default function AuditOffer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-[#111111] border border-[#2a2a2a] rounded-2xl p-8 hover-glow-card"
+            className="bg-[#111111] border border-[#2a2a2a] rounded-2xl p-8"
           >
             <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#9a9a9a] mb-6">What the audit covers</p>
             <ul className="space-y-4">

@@ -6,7 +6,7 @@ interface FinalCTAProps {
 
 export default function FinalCTA({ onOpenModal }: FinalCTAProps) {
   return (
-    <section className="py-32 bg-radial-11">
+    <section className="py-32 bg-[#111111]">
       <div className="max-w-3xl mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

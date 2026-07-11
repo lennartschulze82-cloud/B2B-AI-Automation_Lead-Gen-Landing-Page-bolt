@@ -25,7 +25,7 @@ const steps = [
 
 export default function WhatHappensNext() {
   return (
-    <section className="py-28 bg-radial-0a">
+    <section className="py-28 bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -56,7 +56,7 @@ export default function WhatHappensNext() {
               >
                 <div className="flex md:flex-col items-start md:items-start gap-4 md:gap-0">
                   {/* Step dot */}
-                  <div className="relative z-10 flex-shrink-0 w-16 h-16 rounded-full bg-[#111111] border border-[#2a2a2a] flex items-center justify-center mb-0 md:mb-5 hover-glow-card">
+                  <div className="relative z-10 flex-shrink-0 w-16 h-16 rounded-full bg-[#111111] border border-[#2a2a2a] flex items-center justify-center mb-0 md:mb-5">
                     <span className="text-sm font-bold text-[#4f6ef7]">{step.number}</span>
                   </div>
                   <div className="pt-1 md:pt-0">
