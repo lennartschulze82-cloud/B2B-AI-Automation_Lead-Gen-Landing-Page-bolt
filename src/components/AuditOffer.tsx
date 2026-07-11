@@ -11,7 +11,7 @@ const coverageItems = [
 
 export default function AuditOffer() {
   return (
-    <section className="py-28 bg-[#0d0d0d]">
+    <section className="py-28 bg-radial-0d">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -52,7 +52,7 @@ export default function AuditOffer() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="bg-[#111111] border border-[#2a2a2a] rounded-2xl p-8"
+            className="bg-[#111111] border border-[#2a2a2a] rounded-2xl p-8 hover-glow-card"
           >
             <p className="text-xs font-semibold tracking-[0.15em] uppercase text-[#9a9a9a] mb-6">What the audit covers</p>
             <ul className="space-y-4">
