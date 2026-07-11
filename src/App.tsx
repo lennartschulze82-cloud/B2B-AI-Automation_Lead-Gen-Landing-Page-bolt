@@ -17,7 +17,7 @@ export default function App() {
   function closeModal() { setModalOpen(false); }
 
   return (
-    <div className="bg-[#0a0a0a] min-h-screen">
+    <div className="bg-radial-0a min-h-screen">
       <Navbar onOpenModal={openModal} />
       <Hero onOpenModal={openModal} />
       <WhoIsItFor />

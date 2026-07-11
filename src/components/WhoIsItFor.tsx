@@ -17,7 +17,7 @@ const notForItems = [
 
 export default function WhoIsItFor() {
   return (
-    <section className="py-28 bg-[#0a0a0a]">
+    <section className="py-28 bg-radial-0a">
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,7 +39,7 @@ export default function WhoIsItFor() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="rounded-2xl border bg-[#0d1a14] p-8"
+            className="rounded-2xl border bg-[#0d1a14] p-8 hover-glow-card"
             style={{ borderColor: '#1e4a30' }}
           >
             <h3 className="text-base font-semibold text-[#5ab87a] mb-6 flex items-center gap-2">
@@ -66,7 +66,7 @@ export default function WhoIsItFor() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="rounded-2xl border bg-[#1a0d0d] p-8"
+            className="rounded-2xl border bg-[#1a0d0d] p-8 hover-glow-card"
             style={{ borderColor: '#4a1e1e' }}
           >
             <h3 className="text-base font-semibold text-[#d97272] mb-6 flex items-center gap-2">
