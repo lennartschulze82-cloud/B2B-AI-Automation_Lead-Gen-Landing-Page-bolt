@@ -57,10 +57,12 @@ Probleme:
 4. **Favicon** — eigenes Icon statt `vite.svg` (kann aus Brand-Assets kommen, falls vorhanden, sonst simples Platzhalter-Icon mit "A"/Autonova-Farbe `#4f6ef7`).
 5. **Verifizieren** nach Deploy: metatags.io, Facebook Sharing Debugger, Twitter Card Validator — Bolt-Bild darf nirgends mehr auftauchen.
 
-## Offene Fragen an Lennart
+## Status: ✅ Umgesetzt (11.07.2026)
 
-- Canonical Domain/URL für diese Seite (Vercel? Bolt.host? Eigene Domain?)
-- Bleibt "Autonova" der finale Markenname für dieses Projekt?
-- Gibt es einen Social-Media-Handle (X/Twitter, LinkedIn) für `twitter:site`?
+- Canonical URL: `https://b2-b-ai-automation-lead-gen-landing-iota-puce.vercel.app/`
+- Markenname umgestellt: Autonova → **AIAA** (Navbar, Footer, Titel, Metadaten)
+- `og-image.png` ist ein echter Playwright-Screenshot der Live-Seite (1200×630), kein Bolt-Platzhalter mehr
+- Kein Social-Handle vorhanden → `twitter:site` bewusst weggelassen
+- Verifiziert: Titel, Description, alle OG-/Twitter-Tags live auf Vercel, `og-image.png` unter `/og-image.png` erreichbar (HTTP 200)
 
-**Noch kein Code geändert — wartet auf Freigabe.**
+**Offen für später:** Falls sich die Vercel-URL nochmal ändert (z.B. eigene Domain), müssen `og:url`, `og:image`, `twitter:image` und `<link rel="canonical">` in `index.html` aktualisiert werden — dann auch `og-image.png` neu screenshotten.
